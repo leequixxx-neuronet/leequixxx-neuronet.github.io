@@ -1,7 +1,7 @@
 {
   "name": "Leequixxx Digits",
   "short_name": "Digits",
-  "theme_color": "00a8ff",
+  "theme_color": "#00a8ff",
   "background_color": "#fc5c65",
   "display": "browser",
   "orientation": "landscape",
