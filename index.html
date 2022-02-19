@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="loader">
+        <object class="loader__spinner" data="loader.svg"></object>
+        <span class="loader__text">Loading</span>
+    </div>
+    <div class="workspace">
+        <section class="workspace__item workspace__canvas workspace__canvas_hidden">
+            <span class="tooltip">Draw something here</span>
+            <canvas id="canvas"></canvas>
+        </section>
+        <section class="workspace__item workspace__result workspace__result_hidden">
+            <span class="tooltip">And get something here</span>
+            <span id="result"></span>
+        </section>
+    </div>
+    <canvas id="demo" class="demo demo_hidden"></canvas>
+    <div class="error error_hidden" id="error">
+        <span class="error__title" id="errorTitle"></span>
+        <p class="error__description" id="errorDescription"></p>
+    </div>
+    <script async src="//docs.opencv.org/master/opencv.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/brain.js/2.0.0-beta.4/brain-browser.min.js" integrity="sha512-lNfC3vgTaMQb1wZpnzvhq7EePYCQltqUOq0DxJrWzDNJOoKmpPPKQyGkbAoSArCpFfeLxXZ00iDnIg6titN3PQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
